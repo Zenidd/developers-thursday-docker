@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers Saturday III</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Developers Saturday III</h1>
+        <p>The ultimate event for developers & tech enthusiasts!</p>
+    </header>
+    
+    <section class="content">
+        <div class="card">
+            <h2>Learn</h2>
+            <p>Expand your knowledge with expert talks and workshops.</p>
+        </div>
+        <div class="card">
+            <h2>Connect</h2>
+            <p>Network with like-minded developers and industry leaders.</p>
+        </div>
+        <div class="card">
+            <h2>Innovate</h2>
+            <p>Showcase your skills and explore new technologies.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Developers Saturday III | Powered by Docker</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add('visible');
+                }, index * 300);
+            });
+        });
+    </script>
+</body>
+</html>
